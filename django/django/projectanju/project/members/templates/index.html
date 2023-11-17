@@ -1,0 +1,692 @@
+<!doctype html>
+<html lang="en">
+<head>
+  {% load static %}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="theme-color" content="#feed01"/>
+<title>Digital exhibition</title>
+<meta name="author" content="Themezinho">
+<meta name="description" content="For all kind of exhibition museum website">
+<meta name="keywords" content="wandau, exhibition, museum, art, history, entry, ticket, contemporary, modern, booking, visit, culture, life, centuries, roots, fancy, themezinho">
+
+<!-- SOCIAL MEDIA META -->
+<meta property="og:description" content="Wandau | Art & History Museum">
+<meta property="og:image" content="preview.html">
+<meta property="og:site_name" content="wandau">
+<meta property="og:title" content="wandau">
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://www.themezinho.net/wandau">
+
+<!-- TWITTER META -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@wandau">
+<meta name="twitter:creator" content="@wandau">
+<meta name="twitter:title" content="wandau">
+<meta name="twitter:description" content="Wandau | Art & History Museum">
+<meta name="twitter:image" content="preview.html">
+
+<!-- FAVICON FILES -->
+<link href="ico/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon" sizes="144x144">
+<link href="ico/apple-touch-icon-114-precomposed.png" rel="apple-touch-icon" sizes="114x114">
+<link href="ico/apple-touch-icon-72-precomposed.png" rel="apple-touch-icon" sizes="72x72">
+<link href="ico/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon">
+<link href="ico/favicon.png" rel="shortcut icon">
+
+<!-- CSS FILES -->
+<link rel="stylesheet" href="{% static 'css/fontawesome.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/odometer.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/fancybox.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/swiper.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+<style>
+  .adpan {
+    background-color: #85E6C5;
+    color: darkgreen; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .adpan:hover {
+    background-color: black; 
+    color: white;
+  }
+
+  .adpan a {
+    text-decoration: none;
+  }
+
+  .adpan:hover a {
+    text-decoration: none;
+    color: white;
+  }
+  
+</style>
+
+</head>
+<body>
+
+
+<div class="preloader" id="preloader">
+  <svg viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1">
+    <path d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z"></path>
+  </svg>
+  <div class="inner">
+    <canvas class="progress-bar" id="progress-bar" width="200" height="200"></canvas>
+    <figure><img src="{% static 'images/artlogo.jpg' %}" alt="Image"></figure>
+    <small>Loading</small> </div>
+  <!-- end inner -->
+  
+</div>
+<!-- end preloder -->
+<div class="page-transition">
+  <svg viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1">
+    <path d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z"></path>
+  </svg>
+</div>
+<!-- end page-transition -->
+<div class="smooth-scroll">
+  <div class="section-wrapper" data-scroll-section>
+    <div class="search-box">
+      <div class="container">
+        <div class="form">
+          <h3>SEARCH EVENT</h3>
+          <input type="search" placeholder="What are you looking for ?">
+          <input type="submit" value="SEARCH">
+        </div>
+        <!-- end form -->
+        
+        <div class="search-events">
+          <ul>
+            <li>
+              <h5><a href="#">Independence Day Special</a></h5>
+              <small>01 August – 21 August 2023</small> </li>
+            <li>
+              <h5><a href="#">Janamashtmi Special</a></h5>
+              <small>30 August – 28 September 2023</small> </li>
+            <li>
+              <h5><a href="#">Diwali </a></h5>
+              <small>15 November – 25 December 2023</small> </li>
+          </ul>
+        </div>
+        <!-- end search-events -->
+      </div>
+    </div>
+    <!-- end search-box -->
+    <aside class="side-widget">
+      <svg viewBox="0 0 600 1080" preserveAspectRatio="none" version="1.1">
+        <path d="M540,1080H0V0h540c0,179.85,0,359.7,0,539.54C540,719.7,540,899.85,540,1080z"></path>
+      </svg>
+      <figure class="logo"> <img src="{% static 'images/artlogo.jpg' %}" alt="Image"> </figure>
+      <!-- end logo -->
+      <div class="inner">
+        <div class="widget">
+          <figure><img src="{% static 'images/artlogo.jpg' %}" alt="Image"></figure>
+          <p> <strong>Artistry</strong> is a platform that provides an opportunity to showcase the arts for the artists in the exhibitions & buyers to buy directly
+          </p>
+        </div>
+            <!-- end widget -->
+        <div class="widget">
+          <h6 class="widget-title">Opening Hours</h6>
+          <p>24 Hours/<br>
+             7 Days</p>
+        </div>
+        <!-- end widget -->
+
+
+<!--translator-->
+
+<div id="google_translate_element" style="width: 170px;"></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<!-- end of translator -->
+
+
+      </div>
+      <!-- end inner -->
+		<div class="display-mobile">
+			<div class="custom-menu">
+        <ul>
+          <li><a href="#"></a></li>
+
+        </ul>
+      </div>
+      <!-- end custom-menu -->
+      <div class="site-menu">
+        <ul>
+          <li><a href="{% url 'visit' %}">Visit</a></li>
+          <li><a href="{% url 'exhibitions' %}">Exhibitions</a></li>
+          <li><a href="{% url 'collections' %}">Collections</a></li>
+          <li><a href="{% url 'about' %}">About</a></li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
+          
+          <li><a href="{% url 'signup' %}">Signup</a></li>
+          <li><a href="{% url 'user_login' %}">Login</a></li>
+
+        </ul>
+      </div>
+      <!-- end site-menu -->
+		</div>
+		<!-- end display-mobile -->
+    </aside>
+    <nav class="navbar">
+      <div class="logo"> <a href="{% url 'view' %}"> <img src="{% static 'images/artlogo.jpg' %}" alt="Image"> </a> </div>
+
+
+      <!-- end logo -->
+      <div class="custom-menu">
+        <ul>
+          <li><a href="#"></a></li>
+
+        </ul>
+      </div>
+      <!-- end custom-menu -->
+      <div class="site-menu">
+        <ul>
+          <li><a href="{% url 'visit' %}">Visit</a></li>
+          <li><a href="{% url 'exhibitions' %}">Exhibitions</a></li>
+          <li><a href="{% url 'collections' %}">Collections</a></li>
+          <li><a href="{% url 'about' %}">About</a></li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
+          <li><a href="{% url 'team' %}">Team</a></li>
+           <li><a href="{% url 'signup' %}">Signup</a></li>
+          <li><a href="{% url 'user_login' %}">Login</a></li>
+          <button class='adpan'><a href="{% url 'admin:index' %}">Admin</a></button>
+        </ul>
+        
+      </div>
+      <!-- end site-menu -->
+      <div class="search-button"> <i class="far fa-search"></i> </div>
+      <!-- end search-button -->
+      <div class="hamburger-menu">
+        <svg class="hamburger" width="30" height="30" viewBox="0 0 30 30">
+          <path class="line line-top" d="M0,9h30"/>
+          <path class="line line-center" d="M0,15h30"/>
+          <path class="line line-bottom" d="M0,21h30"/>
+        </svg>
+      </div>
+      <!-- end hamburger-menu -->
+
+      <!-- end navbar-button -->
+    </nav>
+    <!-- end navbar -->
+    <header class="slider">
+      <div class="swiper-container slider-images">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" data-background="{% static 'images/slide02.jpg' %}">
+			<div class="mobile-slide" data-background="{% static 'images/slide-mobile01.jpg' %}"></div>
+			</div>
+          <div class="swiper-slide" data-background="{% static 'images/sa.png' %}">
+			<div class="mobile-slide" data-background="{% static 'images/slide-mobile02.jpg' %}"></div>
+			</div>
+          <div class="swiper-slide" data-background="{% static 'images/natrajj model.jpg' %}">
+			<div class="mobile-slide" data-background="{% static 'images/slide-mobile03.jpg' %}"></div>
+			</div>
+        </div>
+        <!-- end swiper-wrapper -->
+        <div class="container-fluid slider-nav">
+          <div class="swiper-pagination"></div>
+          <!-- end swiper-pagination -->
+          <div class="swiper-fraction"></div>
+          <!-- end swiper-fraction -->
+          <div class="button-prev"><i class="far fa-chevron-down"></i></div>
+          <!-- end swiper-button-prev -->
+          <div class="button-next"><i class="far fa-chevron-up"></i></div>
+          <!-- end swiper-button-next -->
+        </div>
+        <!-- end slider-nav -->
+      </div>
+      <!-- end slider-images -->
+      <div class="swiper-container slider-texts">
+        <svg width="580" height="400" class="svg-morph">
+          <path id="svg_morph" d="m261,30.4375c0,0 114,6 151,75c37,69 37,174 6,206.5625c-31,32.5625 -138,11.4375 -196,-19.5625c-58,-31 -86,-62 -90,-134.4375c12,-136.5625 92,-126.5625 129,-127.5625z" />
+        </svg>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="container-fluid">
+              <h1>Exhibitions & <br>
+                Galleries </h1>
+              <p>Explore great<br> opportunities of  virtual art exhibitions & galleries <br>
+                of India for the first time</p>
+            </div>
+            <!-- end container -->
+          </div>
+          <!-- end swiper-slide -->
+          <div class="swiper-slide">
+            <div class="container-fluid">
+              <h1>Showcase <br>
+                & Sell  </h1>
+              <p>We are providing great<br> opportunities to the artists<br> to showcase their artworks<br> in our exhibitions  <br>
+                to present & sell their artworks to <br>the interested ones.</p>
+            </div>
+            <!-- end container -->
+          </div>
+          <!-- end swiper-slide -->
+          <div class="swiper-slide">
+            <div class="container-fluid">
+              <h1>The Art of <br>
+                India </h1>
+              <p>Indian art consists of a variety of art forms, <br>including painting, sculpture, pottery, and textile arts such as woven silk.</p>
+            </div>
+            <!-- end container -->
+          </div>
+          <!-- end swiper-slide -->
+        </div>
+        <!-- end swiper-wrapper -->
+      </div>
+      <!-- end slider-texts -->
+      <div class="play-now"> <a href="{% static 'videos/video.mp4' %}" data-fancybox data-width="640" data-height="360"  class="play-btn"></a>
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+          <defs>
+            <path id="circlePath" d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "/>
+          </defs>
+          <circle cx="150" cy="100" r="75" fill="none"/>
+          <g>
+            <use xlink:href="#circlePath" fill="none"/>
+            <text>
+              <textPath xlink:href="#circlePath">PLAY NOW  - PLAY NOW - PLAY NOW -</textPath>
+            </text>
+          </g>
+        </svg>
+      </div>
+      <!-- end play-now -->
+    </header>
+
+    <!-- end slider -->
+    <section class="content-section" data-background="#fffbf7">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12">
+            <div class="section-title text-center">
+              <figure><img src="{% static 'images/artlogo.jpg' %}" alt="Image"></figure>
+              <h2>India's Greatest Virtual <br>
+                Exhibitions of Art</h2>
+            </div>
+            <!-- end section-title -->
+          </div>
+          <!-- end col-12 -->
+          <div class="col-lg-7">
+            <figure class="image-box" data-scroll data-scroll-speed="-1" > <img src="{% static 'images/1.jpg' %}" alt="Image"> </figure>
+          </div>
+          <!-- end col-7 -->
+          <div class="col-lg-5">
+            <div class="side-icon-list right-side">
+              <ul>
+                <li>
+                  <figure> <img src="{% static 'images/icon01.png' %}" alt="Image"> </figure>
+                  <div class="content">
+                    <h5>Opening timings</h5>
+                    <p>Go & Search the <br>
+                      Latest Events</p>
+                  </div>
+                  <!-- end content -->
+                </li>
+                <li>
+                  <figure> <img src="{% static 'images/icon02.png' %}" alt="Image"> </figure>
+                  <div class="content">
+                    <h5>Book Online</h5>
+                    <p>Some exhibitions and events carry <br>
+                      a separate charge</p>
+                    <a href="{% url 'new' %}">Join Now and Book Online</a> </div>
+                  <!-- end content -->
+                </li>
+                <li>
+                  <figure> <img src="{% static 'images/icon03.png' %}" alt="Image"> </figure>
+                  <div class="content">
+                    <h5>Where You Visit</h5>
+                    <p>National Skill Training Institute<br>
+                      Noida, Uttar Pradesh</p>
+                  </div>
+
+                  <!-- end content -->
+                </li>
+              </ul>
+            </div>
+            <!-- end side-icon-list -->
+          </div>
+          <!-- end col-5 -->
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+    </section>
+    <!-- end content-section -->
+    <section class="content-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <div class="section-title">
+              
+              <h6>DON’T MISS THE OPPORTUNITY</h6>
+              <h2> Upcoming Events</h2>
+            </div>
+            <!-- end section-title -->
+          </div>
+          <!-- end col-9 -->
+          <div class="col-lg-3"> <a href="{% url 'new' %}" class="circle-button">BOOK AN <br>
+            EVENT</a> </div>
+          <!-- end col-3 -->
+        </div>
+        <!-- end row -->
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-6">
+            <div class="exhibition-box" data-scroll data-scroll-speed="-1" >
+              <figure> <a href="#"><img src="{% static 'images/independence.jpg' %}" alt="Image" class="img"></a>
+                <div class="info">
+                  <figure class="i"><img src="{% static 'images/icon-info.png' %}" alt="Image"></figure>
+                  <span>20% off in exhibitions</span> </div>
+                <!-- end info -->
+              </figure>
+              <div class="content-box">
+                <h4><a href="#">Independence Day Special</a></h4>
+                <p> 01 August – 21 August 2023 </p>
+              </div>
+              <!-- end content-box -->
+            </div>
+            <!-- end exhibition-box -->
+          </div>
+          <!-- end col-4 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="exhibition-box" data-scroll data-scroll-speed="1">
+              <figure> <a href="#"><img src="{% static 'images/janam.jpg' %}" alt="Image" class="img"></a>
+                <div class="info">
+                  <figure class="i"><img src="{% static 'images/icon-info.png' %}" alt="Image"></figure>
+                  <span>30% off in exhibitions</span> </div>
+                <!-- end info -->
+              </figure>
+              <div class="content-box">
+                <h4><a href="#">Janamashtmi Special</a></h4>
+                <p> 30 August - 28 September 2023</p>
+              </div>
+              <!-- end content-box -->
+            </div>
+            <!-- end exhibition-box --> </div>
+          <!-- end col-4 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="exhibition-box" data-scroll data-scroll-speed="-0.5" >
+              <figure> <a href="#"><img src="{% static 'images/diwali.jpg' %}" alt="Image" class="img"></a>
+                <div class="info">
+                  <figure class="i"><img src="{% static 'images/icon-info.png' %}" alt="Image"></figure>
+                  <span>50% off in exhibitions</span> </div>
+                <!-- end info -->
+              </figure>
+              <div class="content-box">
+                <h4><a href="#">Diwali</a></h4>
+                <p> 15 November - 25 December 2023</p>
+              </div>
+              <!-- end content-box -->
+            </div>
+            <!-- end exhibition-box --></div>
+          <!-- end col-4 -->
+          <div class="col-12 text-center">  </div>
+          <!-- end col-12 -->
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+    </section>
+
+    <!-- end content-section -->
+    <section class="content-section no-bottom-spacing bottom-white" data-background="#fffbf7">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="section-title text-center">
+              <figure><img src="{% static 'images/artlogo.jpg' %}" alt="Image"></figure>
+              <h2><marquee><hr><hr>Inspiration of Exhibitions<hr><hr></marquee><br>
+                </h2>
+            </div>
+            <!-- end section-title -->
+          </div>
+          <!-- end col-12 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="text-content" data-scroll data-scroll-speed="-1">
+              <h6>The challenge</h6>
+              <p>This challenge invites artists of all ages<br>
+                 and backgrounds to create artworks inspired <br>
+                 by the colors of the current season.<br>
+                  It's a celebration of the ever-changing beauty<br>
+                   of nature and how it influences art..</p>
+            </div>
+            <!-- end text-content -->
+          </div>
+          <!-- end col-4 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="text-content" data-scroll data-scroll-speed="-1">
+              <h6>The impact</h6>
+              <p>The impact of an art gallery can vary depending on its size,<br>
+                 location, mission, and outreach efforts. However, overall, <br>
+                 art galleries play a vital role in nurturing creativity,<br>
+                  fostering cultural exchange, and contributing to the<br>
+                   well-being of individuals and communities. </p>
+            </div>
+            <!-- end text-content -->
+          </div>
+          <!-- end col-4 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="text-content" data-scroll data-scroll-speed="1">
+              <h6>The Initiative</h6>
+              <p>Starting an art gallery is a significant undertaking <br>
+                that requires dedication and a passion for art.<br>
+                 It's essential to continuously learn and adapt <br>
+                 to the ever-changing art world and market. Building a strong <br>
+                 reputation and a loyal following can take time,<br>
+                  but with commitment and creativity, your art gallery <br>
+                  can become a thriving cultural hub in your community.</p>
+            </div>
+            <!-- end text-content -->
+          </div>
+          <!-- end col-4 -->
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+		<div class="clearfix spacing-100"></div>
+      <div class="horizontal-scroll">
+        <div class="scroll-inner" data-scroll data-scroll-direction="horizontal" data-scroll-speed="5">
+          <div class="scroll-wrapper">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-3">
+                  <figure class="image-box" data-scroll data-scroll-speed="0"> <img src="{% static 'images/mm.jpeg' %}" alt="Image"> </figure>
+                </div>
+                <!-- end col-3 -->
+                <div class="col-md-4 offset-md-1">
+                  <figure class="image-box" data-scroll data-scroll-speed="0"> <img src="{% static 'images/3.jpg' %}" alt="Image"> </figure>
+                </div>
+                <!-- end col-3 -->
+                <div class="col-md-2 offset-md-1">
+                  <figure class="image-box" data-scroll data-scroll-speed="0"> <img src="{% static 'images/bb.jpeg' %}" alt="Image"> </figure>
+                </div>
+                <!-- end col-3 -->
+              </div>
+              <!-- end row -->
+            </div>
+            <!-- end container-fluid -->
+          </div>
+          <!-- end scroll-wrapper -->
+          <div class="scroll-wrapper">
+            <div class="container-fluid">
+              <div class="row">a
+                <div class="col-md-3">
+                  
+                </div>
+                <!-- end col-3 -->
+              </div>
+              <!-- end row -->
+            </div>
+            <!-- container-fluid -->
+          </div>
+          <!-- end scroll-wrapper -->
+        </div>
+        <!-- end scroll-inner -->
+      </div>
+      <!-- end horizontal-scroll -->
+    </section>
+
+    <!-- end content-section -->
+    <section class="content-section no-bottom-spacing">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="section-title text-center">
+              <figure><img src="{% static 'images/artlogo.jpg' %}" alt="Image"></figure>
+              <h6></h6>
+              <h2>Only 3 Steps</h2>
+            </div>
+            <!-- end section-title -->
+          </div>
+          <!-- end col-12 -->
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+      <div class="container-fluid px-0">
+        <div class="row g-0">
+          <div class="col-lg-4">
+            <div class="image-icon-box" data-scroll data-scroll-speed="-1">
+              <figure class="icon"> <img src="{% static 'images/icon04.png' %}" alt="Image"> </figure>
+              <figure class="content-image"> <img src="{% static 'images/ut.jpeg' %}" alt="Image"> </figure>
+              <div class="content-box"> <b>01.</b>
+                <h4>Check Updates for the latest Events</h4>
+                <div class="expand">
+                  <p>Check the websites for the latest Events. Entry to the
+                    Most of the events is still free, Check the details for
+                    your & our convenience.</p>
+                   </div>
+                <!-- end expand -->
+              </div>
+              <!-- end content-box -->
+            </div>
+            <!-- end image-icon-box -->
+          </div>
+          <!-- end col-4 -->
+          <div class="col-lg-4">
+            <div class="image-icon-box" data-scroll data-scroll-speed="0.5">
+              <figure class="icon"> <img src="{% static 'images/icon06.png' %}" alt="Image"> </figure>
+              <figure class="content-image"> <img src="{% static 'images/image05.jpg' %}" alt="Image"> </figure>
+              <div class="content-box"> <b>02.</b>
+                <h4>Booking Online</h4>
+                <div class="expand">
+                  <p>Book the tickets for the Exhibition online to get entry for exhibition to get works & collections of Indian artists.</p>
+                   </div>
+                <!-- end expand -->
+              </div>
+              <!-- end content-box -->
+            </div>
+            <!-- end image-icon-box --> </div>
+          <!-- end col-4 -->
+          <div class="col-lg-4">
+            <div class="image-icon-box" data-scroll data-scroll-speed="1">
+              <figure class="icon"> <img src="{% static 'images/icon06.png' %}" alt="Image"> </figure>
+              <figure class="content-image"> <img src="{% static 'images/image06.jpg' %}" alt="Image"> </figure>
+              <div class="content-box"> <b>03.</b>
+                <h4>Come on time</h4>
+                <div class="expand">
+                  <p>Your time & convenience is our priority.
+                  Take a look at our past exhibitions and enjoy the articles, videos and photo galleries still available to view online.</p>
+                   </div>
+                <!-- end expand -->
+              </div>
+              <!-- end content-box -->
+            </div>
+            <!-- end image-icon-box --> </div>
+          <!-- end col-4 -->
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+    
+    <!-- end content-section -->
+    <section class="content-section" style="margin-top: 90px;">
+      <div class="video-bg">
+        <video src="{% static 'videos/video.mp4' %}" loop autoplay playsinline muted></video>
+      </div>
+      <!-- end video-bg -->
+      <div class="container">
+        <div class="cta-box" data-scroll data-scroll-speed="-1">
+          <h6>Experience our Virtual exhibitions</h6>
+          <h2>here only</h2>
+            
+          <a href="{% url 'themes' %}" class="custom-button">See the highlights</a> </div>
+        <!-- end cta-box -->
+      </div>
+      <!-- end container -->
+    </section>
+    <!-- end content-section -->
+    
+    <!-- end content-section -->
+    
+    
+    <!-- end content-section -->
+    <footer class="footer" style="background: #F0F0F0;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <h6 class="widget-title">About our exhibition</h6>
+            <ul class="footer-menu">
+              <li><a href="{% url 'about' %}">About us </a></li>
+              <li><a href="{% url 'contact' %}">Contact us</a></li>
+              <li><a href="{% url 'collections' %}">Collections</a></li>
+              <li><a href="{% url 'exhibitions' %}">Exhibitions</a></li>
+            </ul>
+          </div>
+          <!-- end col-4 -->
+          <div class="col-lg-4 col-md-6">
+            <h6 class="widget-title">Connect with us</h6>
+            <ul class="social-media">
+              <li><a href="https://www.facebook.com/profile.php?id=100063931831017"><i class="fab fa-facebook-f"></i> /artistry-ind</a></li>
+              <li><a href="https://twitter.com/ngma_delhi?lang=en"><i class="fab fa-twitter"></i> /artistry-museum</a></li>
+              <li><a href="https://www.youtube.com/channel/UC416BswuE2ItX23GySxZcRQ"><i class="fab fa-youtube"></i> /artistry-tv</a></li>
+             
+            </ul>
+          </div>
+          <!-- end col-4 -->
+          <div class="col-lg-4">
+            <h6 class="widget-title">Visit Us </h6>
+            <address class="address">
+            National Skill Training Institute <strong>Noida - Uttar Pradesh</strong> <i class="fas fa-info-circle"></i> +011 7942 2000
+            </address>
+          </div>
+          <!-- end col-4 -->
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+      <div class="footer-bottom">
+        <div class="container"> <span class="copyright">© 2023 Artistry | Art Work Exhibitions</span> <span class="creation">Site created by <a href="#">team-Artistry</a></span> </div>
+        <!-- end container -->
+      </div>
+      <!-- end footer-bottom -->
+    </footer>
+    <!-- end footer -->
+  </div>
+</div>
+
+<!-- JS FILES -->
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/gsap.min.js' %}"></script>
+<script src="{% static 'js/locomotive-scroll.min.js' %}"></script>
+<script src="{% static 'js/ScrollTrigger.min.js' %}"></script>
+<script src="{% static 'js/kinetic-slider.js' %}"></script>
+<script src="{% static 'js/fancybox.min.js' %}"></script>
+<script src="{% static 'js/odometer.min.js' %}"></script>
+<script src="{% static 'js/swiper.min.js' %}"></script>
+<script src="{% static 'js/scripts.js' %}"></script>
+</body>
+</html>

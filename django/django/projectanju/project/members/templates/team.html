@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style1.css' %}">
+    <script src="{% static 'js/script.js' %}"></script>
+
+    <title>Team</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="icon">
+            <div class="imgBox active" style="--i:1;" data-id="content1">
+                <img src="{% static 'images/abhishek.jpg' %}" alt="portrait">
+            </div>
+            <div class="imgBox" style="--i:3;" data-id="content3">
+                <img src="{% static 'images/anju.jpeg' %}" alt="portrait">
+            </div>
+            <div class="imgBox" style="--i:5;" data-id="content5">
+                <img src="{% static 'images/ishita.jpeg' %}" alt="portrait">
+            </div>
+            <div class="imgBox" style="--i:7;" data-id="content7">
+                <img src="{% static 'images/jass.jpeg' %}" alt="portrait">
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="contentBox active" id="content1">
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="{% static 'images/abhishek.jpg' %}" alt="person">
+                    </div>
+                    <div class="textBox">
+                        <h2>Abhishek Shukla<br><span>IT Director</span></h2>
+
+                        <ul class="sci">
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="contentBox" id="content3">
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="{% static 'images/anju.jpeg' %}" alt="person">
+                    </div>
+                    <div class="textBox">
+                        <h2>Anju Luthra <br><span>Backend engineer</span></h2>
+                        <ul class="sci">
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="contentBox" id="content5">
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="{% static 'images/ishita.jpeg' %}" alt="person">
+                    </div>
+                    <div class="textBox">
+                        <h2>Ishita Grover<br><span>Database architect </span></h2>
+                        <ul class="sci">
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="contentBox" id="content7">
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="{% static 'images/jass.jpeg' %}" alt="person">
+                    </div>
+                    <div class="textBox">
+                        <h2>Jasprit Kaur Gill<br><span>UI/UX Designer</span></h2>
+                        <ul class="sci">
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+    <script>
+        let imgBoxes = document.querySelectorAll('.imgBox');
+
+        imgBoxes.forEach(imgBox => {
+            imgBox.addEventListener('mouseover', function () {
+                // Remove 'active' class from all imgBoxes
+                imgBoxes.forEach(box => box.classList.remove('active'));
+
+                // Add 'active' class to the current imgBox
+                this.classList.add('active');
+
+                // Remove 'active' class from all contentBoxes
+                let contentBoxes = document.querySelectorAll('.contentBox');
+                contentBoxes.forEach(box => box.classList.remove('active'));
+
+                // Add 'active' class to the corresponding contentBox
+                let contentId = this.dataset.id;
+                let activeContentBox = document.getElementById(contentId);
+                if (activeContentBox) {
+                    activeContentBox.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

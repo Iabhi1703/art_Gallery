@@ -1,0 +1,36 @@
+{% load static %}
+<html>
+<head>
+    <title>Event booking</title>
+    <link rel="stylesheet" href="{% static 'css/new.css' %}">
+</head>
+<body style="background: #D5FFE4;">
+<div class="container">
+<h1>Book your event</h1>
+{% if submitted %}
+<div class="message" id="thanks-message">Thanks for booking!</div>
+{% endif %}
+
+
+<form method="POST" action="{% url 'new' %}">
+    <fieldset>
+
+    {% csrf_token %}
+     <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="art_genre">Art Genre:</label>
+                <input type="text" id="art_genre" name="art_genre" required>
+
+                <label for="booking_date">Booking date:</label>
+                <input type="date" id="booking_date" name="booking_date" required>
+                <div>
+                <button type="submit">Submit</button>
+                    </div>
+    </fieldset>
+</form>
+</body>
+</html>

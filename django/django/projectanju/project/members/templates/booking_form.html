@@ -1,0 +1,20 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/new.css' %}">
+</head>
+<body>
+    <h1>Booking done</h1>
+    <div class="message" id="thanks-message">Thanks for booking!</div>
+    <form method="POST" action="{% url 'new' %}">
+        {% csrf_token %}
+        Name: <input type="text" name="name">
+        Email: <input type="email" name="email">
+        Art Genre: <input type="text" name="art_genre">
+        Booking date: <input type="date" name="booking_date">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,40 @@
+{% load static %}
+<html>
+    <head>
+        <title>Themes</title>
+        <link rel='stylesheet' href="{% static 'css/themes.css' %}">
+
+        <style>
+            body {
+            background-image: url({% static 'images/cd.jpeg' %});
+            background-repeat: no-repeat; 
+            background-size: cover; 
+            }
+        </style>
+
+    </head>
+    <body>
+        <a href="{% url 'home' %}" style="text-decoration: none; font-size: 25px; margin: 20px 0 0 20px; color: purple;">Home</a>
+        <div class="nine">
+            <h1>Highlights of our previous exhibitions<span>enjoy the immersive experience</span></h1>
+          </div>
+        <h2>Circle of life</h2>
+        <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Q3iIOpijMV4?si=vAxYy4Y-HgrP-dG4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+   <div class='stand-1'></div>
+   <div class='stand-2'></div>
+        </div>
+        <h2>Beyond the screen</h2>
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/2FDsBHA8XiA?si=zC59pmDrnBN3l649" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class='stand-1'></div>
+    <div class='stand-2'></div>
+        </div>
+    <h2>AI Multisensory art</h2>
+    <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/F0V_xjOUdLQ?si=7AIrNbqhTiIjN5mj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class='stand-1'></div>
+    <div class='stand-2'></div>
+    </div>
+</body>
+</html>
